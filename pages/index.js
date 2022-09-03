@@ -73,7 +73,7 @@ export default function Home() {
             Upload Image
           </label>
           <input
-            className="block w-full text-lg text-gray-900 font-quicksand bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+            className="block w-full text-lg text-gray-900 font-quicksand bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none"
             id="file_input"
             saccept=".png, .jpg"
             type="file"
@@ -99,20 +99,20 @@ export default function Home() {
           </div>
         )}
       </div>
+      <div className="font-quicksand text-xl font-semibold py-5 text-center">
+        {output.toString()}
+      </div>
       <div className="text-xl font-quicksand font-semibold my-10 text-center">
         Made by
         <a
-          href="https://abdesol.me/"
+          href="https://ethioai.vercel.app/"
           rel="noopener noreferrer"
           target="_blank"
           className="text-blue-500"
         >
           {" "}
-          Abdella Solomon❤️
+          EthioAI
         </a>
-      </div>
-      <div className="font-quicksand text-xl font-semibold py-5 text-center">
-        {output.toString()}
       </div>
     </div>
   );
